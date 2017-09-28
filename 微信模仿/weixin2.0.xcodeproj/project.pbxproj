@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C606A45895DE601B18E23B05 /* libPods-weixin2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D16383D32A018776E88734F4 /* libPods-weixin2.0.a */; };
+		CE32A6881F24D76C00746380 /* UIImage+YFResizing.m in Sources */ = {isa = PBXBuildFile; fileRef = CE32A6871F24D76C00746380 /* UIImage+YFResizing.m */; };
+		CE41394F1F33156C00C064EB /* CADContactHeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE41394E1F33156C00C064EB /* CADContactHeaderController.m */; };
+		CE4139521F33159000C064EB /* CADContactItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4139511F33159000C064EB /* CADContactItem.m */; };
+		CE81CE341F2A1E3000C9618F /* EMAudioPlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE261F2A1E3000C9618F /* EMAudioPlayerUtil.m */; };
+		CE81CE351F2A1E3000C9618F /* EMAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE281F2A1E3000C9618F /* EMAudioRecorderUtil.m */; };
+		CE81CE361F2A1E3000C9618F /* EMCDDeviceManager+Media.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE2A1F2A1E3000C9618F /* EMCDDeviceManager+Media.m */; };
+		CE81CE371F2A1E3000C9618F /* EMCDDeviceManager+Microphone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE2C1F2A1E3000C9618F /* EMCDDeviceManager+Microphone.m */; };
+		CE81CE381F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE2E1F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.m */; };
+		CE81CE391F2A1E3000C9618F /* EMCDDeviceManager+Remind.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE301F2A1E3000C9618F /* EMCDDeviceManager+Remind.m */; };
+		CE81CE3A1F2A1E3000C9618F /* EMCDDeviceManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE331F2A1E3000C9618F /* EMCDDeviceManagerBase.m */; };
+		CE81CE4B1F2A26DA00C9618F /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE3E1F2A26DA00C9618F /* amrFileCodec.mm */; };
+		CE81CE4C1F2A26DA00C9618F /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE401F2A26DA00C9618F /* wav.mm */; };
+		CE81CE4D1F2A26DA00C9618F /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE81CE421F2A26DA00C9618F /* EMVoiceConverter.mm */; };
+		CE81CE4E1F2A26DA00C9618F /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81CE461F2A26DA00C9618F /* libopencore-amrnb.a */; };
+		CE81CE4F1F2A26DA00C9618F /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81CE4A1F2A26DA00C9618F /* libopencore-amrwb.a */; };
+		CEA6E0C81F21ABA00055A5A4 /* CADUserDetailInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E0C71F21ABA00055A5A4 /* CADUserDetailInfoViewController.m */; };
+		CEA6E0CA1F21ABAE0055A5A4 /* CADUserDetailInfoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA6E0C91F21ABAE0055A5A4 /* CADUserDetailInfoViewController.storyboard */; };
+		CEA6E0CE1F21F4670055A5A4 /* CADContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E0CC1F21F4670055A5A4 /* CADContactCell.m */; };
+		CEA6E0CF1F21F4670055A5A4 /* CADContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6E0CD1F21F4670055A5A4 /* CADContactCell.xib */; };
+		CEA6E0D21F2201860055A5A4 /* CADChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E0D11F2201860055A5A4 /* CADChatViewController.m */; };
+		CEA6E0D51F2208F00055A5A4 /* CADInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6E0D41F2208F00055A5A4 /* CADInputView.m */; };
+		CEA6E0D71F2209030055A5A4 /* CADInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6E0D61F2209030055A5A4 /* CADInputView.xib */; };
+		CEA7482C1F232D0C00443F12 /* CADChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7482B1F232D0C00443F12 /* CADChatCell.m */; };
+		CEA7482F1F232D2C00443F12 /* CADChatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7482E1F232D2C00443F12 /* CADChatFrame.m */; };
+		CEA748321F232D4000443F12 /* CADChat.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA748311F232D4000443F12 /* CADChat.m */; };
+		CEA748351F23319500443F12 /* NSString+YFTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA748341F23319500443F12 /* NSString+YFTimestamp.m */; };
+		CEA748381F234ECE00443F12 /* CADLongPressBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA748371F234ECE00443F12 /* CADLongPressBtn.m */; };
+		CEA834CC1F1DDEEB0044D649 /* CADWeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA834CB1F1DDEEB0044D649 /* CADWeChatViewController.m */; };
+		CEA834D81F1DEFE50044D649 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA834D71F1DEFE50044D649 /* Images.xcassets */; };
+		CEA834DB1F1E06700044D649 /* CADContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA834DA1F1E06700044D649 /* CADContactViewController.m */; };
+		CEA8E42F1F1C49E900C187EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E42E1F1C49E900C187EF /* main.m */; };
+		CEA8E4321F1C49E900C187EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4311F1C49E900C187EF /* AppDelegate.m */; };
+		CEA8E4481F1C49E900C187EF /* weixin2_0UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4471F1C49E900C187EF /* weixin2_0UITests.m */; };
+		CEA8E46F1F1CAC9100C187EF /* CADLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4561F1CAC9000C187EF /* CADLoginController.m */; };
+		CEA8E4721F1CB6A500C187EF /* CADTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4711F1CB6A500C187EF /* CADTabBarController.m */; };
+		CEA8E4751F1CB75C00C187EF /* CADNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4741F1CB75C00C187EF /* CADNavController.m */; };
+		CEA8E4781F1CD9A900C187EF /* CADMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E4771F1CD9A900C187EF /* CADMeViewController.m */; };
+		CEA8E47B1F1CDD2D00C187EF /* CADSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA8E47A1F1CDD2D00C187EF /* CADSettingViewController.m */; };
+		CEA8E47E1F1CE5EF00C187EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA8E47D1F1CE5EF00C187EF /* Main.storyboard */; };
+		CEAA2BD51F53E74F00550013 /* CADMoreInputKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA2BD41F53E74F00550013 /* CADMoreInputKeyboardView.m */; };
+		CEAA2BDC1F54397F00550013 /* CADCallController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA2BDA1F54397F00550013 /* CADCallController.m */; };
+		CEAA2BDD1F54397F00550013 /* CADCallController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAA2BDB1F54397F00550013 /* CADCallController.xib */; };
+		CEAA2BE01F5452E700550013 /* CADMoreViewBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAA2BDF1F5452E700550013 /* CADMoreViewBtn.m */; };
+		CEDF3B481F34596200DA0FFE /* CADGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDF3B471F34596200DA0FFE /* CADGroupViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA8E4441F1C49E900C187EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA8E4221F1C49E900C187EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA8E4291F1C49E900C187EF;
+			remoteInfo = weixin2.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A463E951A10BB88E5444B06 /* Pods-weixin2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weixin2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weixin2.0/Pods-weixin2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		CE32A6861F24D76C00746380 /* UIImage+YFResizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YFResizing.h"; sourceTree = "<group>"; };
+		CE32A6871F24D76C00746380 /* UIImage+YFResizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YFResizing.m"; sourceTree = "<group>"; };
+		CE41394D1F33156C00C064EB /* CADContactHeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADContactHeaderController.h; sourceTree = "<group>"; };
+		CE41394E1F33156C00C064EB /* CADContactHeaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADContactHeaderController.m; sourceTree = "<group>"; };
+		CE4139501F33159000C064EB /* CADContactItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADContactItem.h; sourceTree = "<group>"; };
+		CE4139511F33159000C064EB /* CADContactItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADContactItem.m; sourceTree = "<group>"; };
+		CE81CE211F2A1E3000C9618F /* EMCDDeviceManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerDelegate.h; sourceTree = "<group>"; };
+		CE81CE221F2A1E3000C9618F /* EMCDDeviceManagerProximitySensorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerProximitySensorDelegate.h; sourceTree = "<group>"; };
+		CE81CE241F2A1E3000C9618F /* DemoErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoErrorCode.h; sourceTree = "<group>"; };
+		CE81CE251F2A1E3000C9618F /* EMAudioPlayerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAudioPlayerUtil.h; sourceTree = "<group>"; };
+		CE81CE261F2A1E3000C9618F /* EMAudioPlayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAudioPlayerUtil.m; sourceTree = "<group>"; };
+		CE81CE271F2A1E3000C9618F /* EMAudioRecorderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAudioRecorderUtil.h; sourceTree = "<group>"; };
+		CE81CE281F2A1E3000C9618F /* EMAudioRecorderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAudioRecorderUtil.m; sourceTree = "<group>"; };
+		CE81CE291F2A1E3000C9618F /* EMCDDeviceManager+Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMCDDeviceManager+Media.h"; sourceTree = "<group>"; };
+		CE81CE2A1F2A1E3000C9618F /* EMCDDeviceManager+Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMCDDeviceManager+Media.m"; sourceTree = "<group>"; };
+		CE81CE2B1F2A1E3000C9618F /* EMCDDeviceManager+Microphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMCDDeviceManager+Microphone.h"; sourceTree = "<group>"; };
+		CE81CE2C1F2A1E3000C9618F /* EMCDDeviceManager+Microphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMCDDeviceManager+Microphone.m"; sourceTree = "<group>"; };
+		CE81CE2D1F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMCDDeviceManager+ProximitySensor.h"; sourceTree = "<group>"; };
+		CE81CE2E1F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMCDDeviceManager+ProximitySensor.m"; sourceTree = "<group>"; };
+		CE81CE2F1F2A1E3000C9618F /* EMCDDeviceManager+Remind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMCDDeviceManager+Remind.h"; sourceTree = "<group>"; };
+		CE81CE301F2A1E3000C9618F /* EMCDDeviceManager+Remind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMCDDeviceManager+Remind.m"; sourceTree = "<group>"; };
+		CE81CE311F2A1E3000C9618F /* EMCDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManager.h; sourceTree = "<group>"; };
+		CE81CE321F2A1E3000C9618F /* EMCDDeviceManagerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCDDeviceManagerBase.h; sourceTree = "<group>"; };
+		CE81CE331F2A1E3000C9618F /* EMCDDeviceManagerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCDDeviceManagerBase.m; sourceTree = "<group>"; };
+		CE81CE3D1F2A26DA00C9618F /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		CE81CE3E1F2A26DA00C9618F /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		CE81CE3F1F2A26DA00C9618F /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		CE81CE401F2A26DA00C9618F /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		CE81CE411F2A26DA00C9618F /* EMVoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceConverter.h; sourceTree = "<group>"; };
+		CE81CE421F2A26DA00C9618F /* EMVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EMVoiceConverter.mm; sourceTree = "<group>"; };
+		CE81CE441F2A26DA00C9618F /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		CE81CE451F2A26DA00C9618F /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		CE81CE461F2A26DA00C9618F /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		CE81CE481F2A26DA00C9618F /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		CE81CE491F2A26DA00C9618F /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		CE81CE4A1F2A26DA00C9618F /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		CEA6E0C61F21ABA00055A5A4 /* CADUserDetailInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADUserDetailInfoViewController.h; sourceTree = "<group>"; };
+		CEA6E0C71F21ABA00055A5A4 /* CADUserDetailInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADUserDetailInfoViewController.m; sourceTree = "<group>"; };
+		CEA6E0C91F21ABAE0055A5A4 /* CADUserDetailInfoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CADUserDetailInfoViewController.storyboard; sourceTree = "<group>"; };
+		CEA6E0CB1F21F4670055A5A4 /* CADContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADContactCell.h; sourceTree = "<group>"; };
+		CEA6E0CC1F21F4670055A5A4 /* CADContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADContactCell.m; sourceTree = "<group>"; };
+		CEA6E0CD1F21F4670055A5A4 /* CADContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADContactCell.xib; sourceTree = "<group>"; };
+		CEA6E0D01F2201860055A5A4 /* CADChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADChatViewController.h; sourceTree = "<group>"; };
+		CEA6E0D11F2201860055A5A4 /* CADChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADChatViewController.m; sourceTree = "<group>"; };
+		CEA6E0D31F2208F00055A5A4 /* CADInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADInputView.h; sourceTree = "<group>"; };
+		CEA6E0D41F2208F00055A5A4 /* CADInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADInputView.m; sourceTree = "<group>"; };
+		CEA6E0D61F2209030055A5A4 /* CADInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADInputView.xib; sourceTree = "<group>"; };
+		CEA7482A1F232D0B00443F12 /* CADChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADChatCell.h; sourceTree = "<group>"; };
+		CEA7482B1F232D0C00443F12 /* CADChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADChatCell.m; sourceTree = "<group>"; };
+		CEA7482D1F232D2C00443F12 /* CADChatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADChatFrame.h; sourceTree = "<group>"; };
+		CEA7482E1F232D2C00443F12 /* CADChatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADChatFrame.m; sourceTree = "<group>"; };
+		CEA748301F232D4000443F12 /* CADChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADChat.h; sourceTree = "<group>"; };
+		CEA748311F232D4000443F12 /* CADChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADChat.m; sourceTree = "<group>"; };
+		CEA748331F23319500443F12 /* NSString+YFTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YFTimestamp.h"; sourceTree = "<group>"; };
+		CEA748341F23319500443F12 /* NSString+YFTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YFTimestamp.m"; sourceTree = "<group>"; };
+		CEA748361F234ECE00443F12 /* CADLongPressBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADLongPressBtn.h; sourceTree = "<group>"; };
+		CEA748371F234ECE00443F12 /* CADLongPressBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADLongPressBtn.m; sourceTree = "<group>"; };
+		CEA834CA1F1DDEEB0044D649 /* CADWeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADWeChatViewController.h; sourceTree = "<group>"; };
+		CEA834CB1F1DDEEB0044D649 /* CADWeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADWeChatViewController.m; sourceTree = "<group>"; };
+		CEA834D71F1DEFE50044D649 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEA834D91F1E06700044D649 /* CADContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADContactViewController.h; sourceTree = "<group>"; };
+		CEA834DA1F1E06700044D649 /* CADContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADContactViewController.m; sourceTree = "<group>"; };
+		CEA8E42A1F1C49E900C187EF /* weixin2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weixin2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8E42E1F1C49E900C187EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEA8E4301F1C49E900C187EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEA8E4311F1C49E900C187EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEA8E43E1F1C49E900C187EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA8E4431F1C49E900C187EF /* weixin2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weixin2.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA8E4471F1C49E900C187EF /* weixin2_0UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weixin2_0UITests.m; sourceTree = "<group>"; };
+		CEA8E4491F1C49E900C187EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA8E4551F1CAC9000C187EF /* CADLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADLoginController.h; sourceTree = "<group>"; };
+		CEA8E4561F1CAC9000C187EF /* CADLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADLoginController.m; sourceTree = "<group>"; };
+		CEA8E4701F1CB6A500C187EF /* CADTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADTabBarController.h; sourceTree = "<group>"; };
+		CEA8E4711F1CB6A500C187EF /* CADTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADTabBarController.m; sourceTree = "<group>"; };
+		CEA8E4731F1CB75C00C187EF /* CADNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADNavController.h; sourceTree = "<group>"; };
+		CEA8E4741F1CB75C00C187EF /* CADNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADNavController.m; sourceTree = "<group>"; };
+		CEA8E4761F1CD9A900C187EF /* CADMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMeViewController.h; sourceTree = "<group>"; };
+		CEA8E4771F1CD9A900C187EF /* CADMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMeViewController.m; sourceTree = "<group>"; };
+		CEA8E4791F1CDD2D00C187EF /* CADSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADSettingViewController.h; sourceTree = "<group>"; };
+		CEA8E47A1F1CDD2D00C187EF /* CADSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADSettingViewController.m; sourceTree = "<group>"; };
+		CEA8E47C1F1CDDC500C187EF /* weixin.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weixin.pch; sourceTree = "<group>"; };
+		CEA8E47D1F1CE5EF00C187EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CEAA2BD31F53E74F00550013 /* CADMoreInputKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMoreInputKeyboardView.h; sourceTree = "<group>"; };
+		CEAA2BD41F53E74F00550013 /* CADMoreInputKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMoreInputKeyboardView.m; sourceTree = "<group>"; };
+		CEAA2BD91F54397F00550013 /* CADCallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADCallController.h; sourceTree = "<group>"; };
+		CEAA2BDA1F54397F00550013 /* CADCallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADCallController.m; sourceTree = "<group>"; };
+		CEAA2BDB1F54397F00550013 /* CADCallController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADCallController.xib; sourceTree = "<group>"; };
+		CEAA2BDE1F5452E700550013 /* CADMoreViewBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMoreViewBtn.h; sourceTree = "<group>"; };
+		CEAA2BDF1F5452E700550013 /* CADMoreViewBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMoreViewBtn.m; sourceTree = "<group>"; };
+		CEDF3B461F34596200DA0FFE /* CADGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADGroupViewController.h; sourceTree = "<group>"; };
+		CEDF3B471F34596200DA0FFE /* CADGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADGroupViewController.m; sourceTree = "<group>"; };
+		D16383D32A018776E88734F4 /* libPods-weixin2.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weixin2.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA97AB9208D840037D2C272 /* Pods-weixin2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weixin2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-weixin2.0/Pods-weixin2.0.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA8E4271F1C49E900C187EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C606A45895DE601B18E23B05 /* libPods-weixin2.0.a in Frameworks */,
+				CE81CE4F1F2A26DA00C9618F /* libopencore-amrwb.a in Frameworks */,
+				CE81CE4E1F2A26DA00C9618F /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8E4401F1C49E900C187EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147D4EA1383374C578A91B9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A463E951A10BB88E5444B06 /* Pods-weixin2.0.debug.xcconfig */,
+				EFA97AB9208D840037D2C272 /* Pods-weixin2.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE81CE1F1F2A1E3000C9618F /* DeviceUtil */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE201F2A1E3000C9618F /* delegates */,
+				CE81CE231F2A1E3000C9618F /* internal */,
+			);
+			path = DeviceUtil;
+			sourceTree = "<group>";
+		};
+		CE81CE201F2A1E3000C9618F /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE211F2A1E3000C9618F /* EMCDDeviceManagerDelegate.h */,
+				CE81CE221F2A1E3000C9618F /* EMCDDeviceManagerProximitySensorDelegate.h */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		CE81CE231F2A1E3000C9618F /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE241F2A1E3000C9618F /* DemoErrorCode.h */,
+				CE81CE251F2A1E3000C9618F /* EMAudioPlayerUtil.h */,
+				CE81CE261F2A1E3000C9618F /* EMAudioPlayerUtil.m */,
+				CE81CE271F2A1E3000C9618F /* EMAudioRecorderUtil.h */,
+				CE81CE281F2A1E3000C9618F /* EMAudioRecorderUtil.m */,
+				CE81CE291F2A1E3000C9618F /* EMCDDeviceManager+Media.h */,
+				CE81CE2A1F2A1E3000C9618F /* EMCDDeviceManager+Media.m */,
+				CE81CE2B1F2A1E3000C9618F /* EMCDDeviceManager+Microphone.h */,
+				CE81CE2C1F2A1E3000C9618F /* EMCDDeviceManager+Microphone.m */,
+				CE81CE2D1F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.h */,
+				CE81CE2E1F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.m */,
+				CE81CE2F1F2A1E3000C9618F /* EMCDDeviceManager+Remind.h */,
+				CE81CE301F2A1E3000C9618F /* EMCDDeviceManager+Remind.m */,
+				CE81CE311F2A1E3000C9618F /* EMCDDeviceManager.h */,
+				CE81CE321F2A1E3000C9618F /* EMCDDeviceManagerBase.h */,
+				CE81CE331F2A1E3000C9618F /* EMCDDeviceManagerBase.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		CE81CE3B1F2A26DA00C9618F /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE3C1F2A26DA00C9618F /* amrwapper */,
+				CE81CE411F2A26DA00C9618F /* EMVoiceConverter.h */,
+				CE81CE421F2A26DA00C9618F /* EMVoiceConverter.mm */,
+				CE81CE431F2A26DA00C9618F /* opencore-amrnb */,
+				CE81CE471F2A26DA00C9618F /* opencore-amrwb */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		CE81CE3C1F2A26DA00C9618F /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE3D1F2A26DA00C9618F /* amrFileCodec.h */,
+				CE81CE3E1F2A26DA00C9618F /* amrFileCodec.mm */,
+				CE81CE3F1F2A26DA00C9618F /* wav.h */,
+				CE81CE401F2A26DA00C9618F /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		CE81CE431F2A26DA00C9618F /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE441F2A26DA00C9618F /* interf_dec.h */,
+				CE81CE451F2A26DA00C9618F /* interf_enc.h */,
+				CE81CE461F2A26DA00C9618F /* libopencore-amrnb.a */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		CE81CE471F2A26DA00C9618F /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE481F2A26DA00C9618F /* dec_if.h */,
+				CE81CE491F2A26DA00C9618F /* if_rom.h */,
+				CE81CE4A1F2A26DA00C9618F /* libopencore-amrwb.a */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		CEA8E4211F1C49E900C187EF = {
+			isa = PBXGroup;
+			children = (
+				CEA8E42C1F1C49E900C187EF /* weixin2.0 */,
+				CEA8E4461F1C49E900C187EF /* weixin2.0UITests */,
+				CEA8E42B1F1C49E900C187EF /* Products */,
+				147D4EA1383374C578A91B9C /* Pods */,
+				FE99901FD3F9921D0D223469 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA8E42B1F1C49E900C187EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E42A1F1C49E900C187EF /* weixin2.0.app */,
+				CEA8E4431F1C49E900C187EF /* weixin2.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA8E42C1F1C49E900C187EF /* weixin2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4521F1CAC9000C187EF /* classes */,
+				CEA8E4301F1C49E900C187EF /* AppDelegate.h */,
+				CEA8E4311F1C49E900C187EF /* AppDelegate.m */,
+				CEA8E47D1F1CE5EF00C187EF /* Main.storyboard */,
+				CEA8E43E1F1C49E900C187EF /* Info.plist */,
+				CEA834D71F1DEFE50044D649 /* Images.xcassets */,
+				CEA8E42D1F1C49E900C187EF /* Supporting Files */,
+			);
+			path = weixin2.0;
+			sourceTree = "<group>";
+		};
+		CEA8E42D1F1C49E900C187EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E42E1F1C49E900C187EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEA8E4461F1C49E900C187EF /* weixin2.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4471F1C49E900C187EF /* weixin2_0UITests.m */,
+				CEA8E4491F1C49E900C187EF /* Info.plist */,
+			);
+			path = weixin2.0UITests;
+			sourceTree = "<group>";
+		};
+		CEA8E4521F1CAC9000C187EF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4531F1CAC9000C187EF /* CADLoginAndReg */,
+				CEA8E4591F1CAC9000C187EF /* Chat */,
+				CEA8E45D1F1CAC9000C187EF /* Contact */,
+				CEA8E4611F1CAC9000C187EF /* Discover */,
+				CEA8E4651F1CAC9000C187EF /* Main */,
+				CEA8E46B1F1CAC9000C187EF /* Me */,
+				CEA8E47C1F1CDDC500C187EF /* weixin.pch */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		CEA8E4531F1CAC9000C187EF /* CADLoginAndReg */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4541F1CAC9000C187EF /* controller */,
+				CEA8E4571F1CAC9000C187EF /* model */,
+				CEA8E4581F1CAC9000C187EF /* view */,
+			);
+			path = CADLoginAndReg;
+			sourceTree = "<group>";
+		};
+		CEA8E4541F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4551F1CAC9000C187EF /* CADLoginController.h */,
+				CEA8E4561F1CAC9000C187EF /* CADLoginController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E4571F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E4581F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CEA8E4591F1CAC9000C187EF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E45A1F1CAC9000C187EF /* controller */,
+				CEA8E45B1F1CAC9000C187EF /* model */,
+				CEA8E45C1F1CAC9000C187EF /* view */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CEA8E45A1F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA834CA1F1DDEEB0044D649 /* CADWeChatViewController.h */,
+				CEA834CB1F1DDEEB0044D649 /* CADWeChatViewController.m */,
+				CEA6E0D01F2201860055A5A4 /* CADChatViewController.h */,
+				CEA6E0D11F2201860055A5A4 /* CADChatViewController.m */,
+				CEAA2BD91F54397F00550013 /* CADCallController.h */,
+				CEAA2BDA1F54397F00550013 /* CADCallController.m */,
+				CEAA2BDB1F54397F00550013 /* CADCallController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E45B1F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7482D1F232D2C00443F12 /* CADChatFrame.h */,
+				CEA7482E1F232D2C00443F12 /* CADChatFrame.m */,
+				CEA748301F232D4000443F12 /* CADChat.h */,
+				CEA748311F232D4000443F12 /* CADChat.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E45C1F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6E0D31F2208F00055A5A4 /* CADInputView.h */,
+				CEA6E0D41F2208F00055A5A4 /* CADInputView.m */,
+				CEA6E0D61F2209030055A5A4 /* CADInputView.xib */,
+				CEA7482A1F232D0B00443F12 /* CADChatCell.h */,
+				CEA7482B1F232D0C00443F12 /* CADChatCell.m */,
+				CEA748361F234ECE00443F12 /* CADLongPressBtn.h */,
+				CEA748371F234ECE00443F12 /* CADLongPressBtn.m */,
+				CEAA2BD31F53E74F00550013 /* CADMoreInputKeyboardView.h */,
+				CEAA2BD41F53E74F00550013 /* CADMoreInputKeyboardView.m */,
+				CEAA2BDE1F5452E700550013 /* CADMoreViewBtn.h */,
+				CEAA2BDF1F5452E700550013 /* CADMoreViewBtn.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CEA8E45D1F1CAC9000C187EF /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E45E1F1CAC9000C187EF /* controller */,
+				CEA8E45F1F1CAC9000C187EF /* model */,
+				CEA8E4601F1CAC9000C187EF /* view */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		CEA8E45E1F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA834D91F1E06700044D649 /* CADContactViewController.h */,
+				CEA834DA1F1E06700044D649 /* CADContactViewController.m */,
+				CEA6E0C61F21ABA00055A5A4 /* CADUserDetailInfoViewController.h */,
+				CEA6E0C71F21ABA00055A5A4 /* CADUserDetailInfoViewController.m */,
+				CEA6E0C91F21ABAE0055A5A4 /* CADUserDetailInfoViewController.storyboard */,
+				CE41394D1F33156C00C064EB /* CADContactHeaderController.h */,
+				CE41394E1F33156C00C064EB /* CADContactHeaderController.m */,
+				CEDF3B461F34596200DA0FFE /* CADGroupViewController.h */,
+				CEDF3B471F34596200DA0FFE /* CADGroupViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E45F1F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE4139501F33159000C064EB /* CADContactItem.h */,
+				CE4139511F33159000C064EB /* CADContactItem.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E4601F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6E0CB1F21F4670055A5A4 /* CADContactCell.h */,
+				CEA6E0CC1F21F4670055A5A4 /* CADContactCell.m */,
+				CEA6E0CD1F21F4670055A5A4 /* CADContactCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CEA8E4611F1CAC9000C187EF /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4621F1CAC9000C187EF /* controller */,
+				CEA8E4631F1CAC9000C187EF /* model */,
+				CEA8E4641F1CAC9000C187EF /* view */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		CEA8E4621F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E4631F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E4641F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CEA8E4651F1CAC9000C187EF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4661F1CAC9000C187EF /* category */,
+				CEA8E4671F1CAC9000C187EF /* controller */,
+				CEA8E4681F1CAC9000C187EF /* lib */,
+				CEA8E4691F1CAC9000C187EF /* model */,
+				CEA8E46A1F1CAC9000C187EF /* view */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CEA8E4661F1CAC9000C187EF /* category */ = {
+			isa = PBXGroup;
+			children = (
+				CEA748331F23319500443F12 /* NSString+YFTimestamp.h */,
+				CEA748341F23319500443F12 /* NSString+YFTimestamp.m */,
+				CE32A6861F24D76C00746380 /* UIImage+YFResizing.h */,
+				CE32A6871F24D76C00746380 /* UIImage+YFResizing.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		CEA8E4671F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4701F1CB6A500C187EF /* CADTabBarController.h */,
+				CEA8E4711F1CB6A500C187EF /* CADTabBarController.m */,
+				CEA8E4731F1CB75C00C187EF /* CADNavController.h */,
+				CEA8E4741F1CB75C00C187EF /* CADNavController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E4681F1CAC9000C187EF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CE3B1F2A26DA00C9618F /* VoiceConvert */,
+				CE81CE1F1F2A1E3000C9618F /* DeviceUtil */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CEA8E4691F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E46A1F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CEA8E46B1F1CAC9000C187EF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E46C1F1CAC9000C187EF /* controller */,
+				CEA8E46D1F1CAC9000C187EF /* model */,
+				CEA8E46E1F1CAC9000C187EF /* view */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		CEA8E46C1F1CAC9000C187EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8E4761F1CD9A900C187EF /* CADMeViewController.h */,
+				CEA8E4771F1CD9A900C187EF /* CADMeViewController.m */,
+				CEA8E4791F1CDD2D00C187EF /* CADSettingViewController.h */,
+				CEA8E47A1F1CDD2D00C187EF /* CADSettingViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CEA8E46D1F1CAC9000C187EF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CEA8E46E1F1CAC9000C187EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE99901FD3F9921D0D223469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D16383D32A018776E88734F4 /* libPods-weixin2.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA8E4291F1C49E900C187EF /* weixin2.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA8E44C1F1C49E900C187EF /* Build configuration list for PBXNativeTarget "weixin2.0" */;
+			buildPhases = (
+				4982F0422B0084CFA98277D3 /* [CP] Check Pods Manifest.lock */,
+				CEA8E4261F1C49E900C187EF /* Sources */,
+				CEA8E4271F1C49E900C187EF /* Frameworks */,
+				CEA8E4281F1C49E900C187EF /* Resources */,
+				953F1201A0A0E0F79314281E /* [CP] Embed Pods Frameworks */,
+				D0BF71360733A5B3A9F26D5B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weixin2.0;
+			productName = weixin2.0;
+			productReference = CEA8E42A1F1C49E900C187EF /* weixin2.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA8E4421F1C49E900C187EF /* weixin2.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA8E44F1F1C49E900C187EF /* Build configuration list for PBXNativeTarget "weixin2.0UITests" */;
+			buildPhases = (
+				CEA8E43F1F1C49E900C187EF /* Sources */,
+				CEA8E4401F1C49E900C187EF /* Frameworks */,
+				CEA8E4411F1C49E900C187EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEA8E4451F1C49E900C187EF /* PBXTargetDependency */,
+			);
+			name = weixin2.0UITests;
+			productName = weixin2.0UITests;
+			productReference = CEA8E4431F1C49E900C187EF /* weixin2.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA8E4221F1C49E900C187EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CAD;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = changandaxue;
+				TargetAttributes = {
+					CEA8E4291F1C49E900C187EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5HSQ87887A;
+						ProvisioningStyle = Automatic;
+					};
+					CEA8E4421F1C49E900C187EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEA8E4291F1C49E900C187EF;
+					};
+				};
+			};
+			buildConfigurationList = CEA8E4251F1C49E900C187EF /* Build configuration list for PBXProject "weixin2.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA8E4211F1C49E900C187EF;
+			productRefGroup = CEA8E42B1F1C49E900C187EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA8E4291F1C49E900C187EF /* weixin2.0 */,
+				CEA8E4421F1C49E900C187EF /* weixin2.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA8E4281F1C49E900C187EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA834D81F1DEFE50044D649 /* Images.xcassets in Resources */,
+				CEA6E0D71F2209030055A5A4 /* CADInputView.xib in Resources */,
+				CEA6E0CA1F21ABAE0055A5A4 /* CADUserDetailInfoViewController.storyboard in Resources */,
+				CEA8E47E1F1CE5EF00C187EF /* Main.storyboard in Resources */,
+				CEAA2BDD1F54397F00550013 /* CADCallController.xib in Resources */,
+				CEA6E0CF1F21F4670055A5A4 /* CADContactCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8E4411F1C49E900C187EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4982F0422B0084CFA98277D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		953F1201A0A0E0F79314281E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weixin2.0/Pods-weixin2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BF71360733A5B3A9F26D5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weixin2.0/Pods-weixin2.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA8E4261F1C49E900C187EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8E47B1F1CDD2D00C187EF /* CADSettingViewController.m in Sources */,
+				CEA7482F1F232D2C00443F12 /* CADChatFrame.m in Sources */,
+				CE81CE351F2A1E3000C9618F /* EMAudioRecorderUtil.m in Sources */,
+				CEA6E0C81F21ABA00055A5A4 /* CADUserDetailInfoViewController.m in Sources */,
+				CE81CE4D1F2A26DA00C9618F /* EMVoiceConverter.mm in Sources */,
+				CEA8E4721F1CB6A500C187EF /* CADTabBarController.m in Sources */,
+				CE81CE3A1F2A1E3000C9618F /* EMCDDeviceManagerBase.m in Sources */,
+				CEDF3B481F34596200DA0FFE /* CADGroupViewController.m in Sources */,
+				CE81CE4B1F2A26DA00C9618F /* amrFileCodec.mm in Sources */,
+				CEA8E4321F1C49E900C187EF /* AppDelegate.m in Sources */,
+				CE81CE341F2A1E3000C9618F /* EMAudioPlayerUtil.m in Sources */,
+				CE41394F1F33156C00C064EB /* CADContactHeaderController.m in Sources */,
+				CEA748381F234ECE00443F12 /* CADLongPressBtn.m in Sources */,
+				CEAA2BD51F53E74F00550013 /* CADMoreInputKeyboardView.m in Sources */,
+				CEA8E46F1F1CAC9100C187EF /* CADLoginController.m in Sources */,
+				CEA6E0D51F2208F00055A5A4 /* CADInputView.m in Sources */,
+				CEA748351F23319500443F12 /* NSString+YFTimestamp.m in Sources */,
+				CE81CE371F2A1E3000C9618F /* EMCDDeviceManager+Microphone.m in Sources */,
+				CEAA2BDC1F54397F00550013 /* CADCallController.m in Sources */,
+				CE81CE381F2A1E3000C9618F /* EMCDDeviceManager+ProximitySensor.m in Sources */,
+				CE81CE361F2A1E3000C9618F /* EMCDDeviceManager+Media.m in Sources */,
+				CEA6E0D21F2201860055A5A4 /* CADChatViewController.m in Sources */,
+				CE32A6881F24D76C00746380 /* UIImage+YFResizing.m in Sources */,
+				CEA8E4751F1CB75C00C187EF /* CADNavController.m in Sources */,
+				CEA834DB1F1E06700044D649 /* CADContactViewController.m in Sources */,
+				CE4139521F33159000C064EB /* CADContactItem.m in Sources */,
+				CEA6E0CE1F21F4670055A5A4 /* CADContactCell.m in Sources */,
+				CEAA2BE01F5452E700550013 /* CADMoreViewBtn.m in Sources */,
+				CEA8E42F1F1C49E900C187EF /* main.m in Sources */,
+				CEA748321F232D4000443F12 /* CADChat.m in Sources */,
+				CEA8E4781F1CD9A900C187EF /* CADMeViewController.m in Sources */,
+				CE81CE4C1F2A26DA00C9618F /* wav.mm in Sources */,
+				CE81CE391F2A1E3000C9618F /* EMCDDeviceManager+Remind.m in Sources */,
+				CEA7482C1F232D0C00443F12 /* CADChatCell.m in Sources */,
+				CEA834CC1F1DDEEB0044D649 /* CADWeChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA8E43F1F1C49E900C187EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8E4481F1C49E900C187EF /* weixin2_0UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA8E4451F1C49E900C187EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA8E4291F1C49E900C187EF /* weixin2.0 */;
+			targetProxy = CEA8E4441F1C49E900C187EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEA8E44A1F1C49E900C187EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEA8E44B1F1C49E900C187EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA8E44D1F1C49E900C187EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A463E951A10BB88E5444B06 /* Pods-weixin2.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5HSQ87887A;
+				GCC_PREFIX_HEADER = /Users/user/Desktop/fileUpload/weixin2.0/weixin2.0/classes/weixin.pch;
+				INFOPLIST_FILE = weixin2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weixin2.0/classes/Main/lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/weixin2.0/classes/Main/lib/VoiceConvert/opencore-amrwb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.changandaxue.weixin2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA8E44E1F1C49E900C187EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFA97AB9208D840037D2C272 /* Pods-weixin2.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5HSQ87887A;
+				GCC_PREFIX_HEADER = /Users/user/Desktop/fileUpload/weixin2.0/weixin2.0/classes/weixin.pch;
+				INFOPLIST_FILE = weixin2.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weixin2.0/classes/Main/lib/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/weixin2.0/classes/Main/lib/VoiceConvert/opencore-amrwb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.changandaxue.weixin2-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEA8E4501F1C49E900C187EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = weixin2.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.changandaxue.weixin2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = weixin2.0;
+			};
+			name = Debug;
+		};
+		CEA8E4511F1C49E900C187EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = weixin2.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.changandaxue.weixin2-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = weixin2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA8E4251F1C49E900C187EF /* Build configuration list for PBXProject "weixin2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8E44A1F1C49E900C187EF /* Debug */,
+				CEA8E44B1F1C49E900C187EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA8E44C1F1C49E900C187EF /* Build configuration list for PBXNativeTarget "weixin2.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8E44D1F1C49E900C187EF /* Debug */,
+				CEA8E44E1F1C49E900C187EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA8E44F1F1C49E900C187EF /* Build configuration list for PBXNativeTarget "weixin2.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA8E4501F1C49E900C187EF /* Debug */,
+				CEA8E4511F1C49E900C187EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEA8E4221F1C49E900C187EF /* Project object */;
+}

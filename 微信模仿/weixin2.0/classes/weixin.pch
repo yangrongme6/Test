@@ -1,0 +1,27 @@
+//
+//  weixin.pch
+//  weixin2.0
+//
+//  Created by user on 17/7/17.
+//  Copyright © 2017年 changandaxue. All rights reserved.
+//
+
+#ifndef weixin_pch
+#define weixin_pch
+
+#import "EaseMob.h"
+#import "JDStatusBarNotification.h"
+#import "SVProgressHUD.h"
+#import "NSString+YFTimestamp.h"
+#import "UIImage+YFResizing.h"
+#import <UIButton+WebCache.h>
+#import "MWPhotoBrowser.h"
+#import "EMCDDeviceManager.h"
+
+#define CADStoryboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+#define kTimeFont [UIFont systemFontOfSize:13.0]
+#define kTitleFont [UIFont systemFontOfSize:15.0]
+#define BackGround243Color [UIColor colorWithRed:243/255.0 green:243/255.0 blue:243/255.0 alpha:1]
+
+//[UIStoryboard storyboardWithName: @"Main" bundle: [NSBundle mainBundle]]
+#endif /* weixin_pch */
